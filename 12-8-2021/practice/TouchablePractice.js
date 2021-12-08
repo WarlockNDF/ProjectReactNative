@@ -29,11 +29,12 @@ const TouchablePractice = () => {
                     onChangeText={(mail) => setEmail(mail)}
                 />
                 <TouchableOpacity
-                    activeOpacity={0.5}>
-                    <Button
-                        onPress={checkInput}
-                        title='SUBMIT'
-                    />
+                    activeOpacity={0.5}
+                    onPress={checkInput}
+                    style={{alignContent:'center',backgroundColor: 'pink'}}>
+                        <View style={{alignItems:'center'}}>
+                        <Text>SUBMIT</Text>
+                        </View>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
@@ -43,3 +44,4 @@ const TouchablePractice = () => {
 export default TouchablePractice
 
 const styles = StyleSheet.create({})
+
